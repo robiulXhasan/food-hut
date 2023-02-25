@@ -17,13 +17,13 @@
 
 <body>
     <header>
-        <nav class="w-11/12 mx-auto">
+        <nav class="w-11/12 md:w-10/12 mx-auto py-2">
             <div class="navbar">
                 <div class="navbar-start">
-                    <a class="text-xl font-bold">Tasty <span class="text-amber-400">HUT</span> </a>
+                    <a class="text-3xl font-bold">Tasty <span class="text-amber-400">HUT</span> </a>
                 </div>
                 <div class="navbar-end">
-                    <a class="px-5 py-2 rounded-lg t font-semibold border-accent bg-amber-400">Sign Up</a>
+                    <a class="px-5 py-3 rounded-lg  font-bold border-accent bg-amber-400">Sign Up</a>
                 </div>
             </div>
         </nav>
@@ -35,20 +35,51 @@
                 <div style="background: rgba(16, 15, 15, 0.7);" class="absolute inset-0 opacity-70"></div>
                 <div class="absolute inset-0 flex justify-center items-center">
                     <div class="text-center space-y-2 md:space-y-6">
-                        <h1 class="text-white text-4xl font-bold">Taste Our Delicious <br> Best Foods</h1>
-                        <p class="text-xs text-white">There are many variations of passages of Lorem Ipsum available,
+                        <h1 class="text-white text-2xl md:text-7xl font-bold">Taste Our Delicious <br> Best Foods</h1>
+                        <p class="text-xs md:text-lg text-white">There are many variations of passages of Lorem Ipsum
+                            available,
                             but the
                             majority
                             have <br> suffered alteration in some form, by injected humou.</p>
-                        <input class="w-1/2 md:w-3/4 px-2 py-2 rounded" type="text" placeholder="Search any food">
-                        <button class="px-5 py-2 rounded-lg  font-semibold border-accent bg-amber-400">Search
+                        <input id="search-field" class="w-1/2 md:w-3/4 px-2  py-1 md:py-3 rounded" type="text"
+                            placeholder="Search any food">
+                        <button id="search-btn"
+                            class="px-5 py-1 md:py-3 rounded-lg  font-bold border-accent bg-amber-400">Search
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+        <section class="food-list w-11/12 md:w-10/12 mx-auto mt-20 ">
+            <h2 class="my-10 text-center text-2xl md:text-5xl font-bold">Your <span
+                    class="text-amber-400">Favourite</span> Food</h2>
+            <div id="food-container" class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
+
+            </div>
+            <!-- The button to open modal -->
+
+
+            <input type="checkbox" id="foodDetails" class="modal-toggle " />
+            <div id="food-details-container" class="modal ">
+
+            </div>
+
+            <div class="text-center mb-10">
+                <button id="show-all"
+                    class="w-1/2 md:w-1/4 py-3  mt-10 rounded-lg  font-bold border-accent bg-amber-400">Show All
+                </button>
+            </div>
+
+        </section>
+    </main>
+    <footer class="" style="background:rgba(255, 193, 7, 0.05);">
+        <div class="footer-container w-11/12 md:w-10/12 mx-auto">
+
+        </div>
+
+    </footer>
+    <script src="./app.js"></script>
 </body>
 
 </html>
